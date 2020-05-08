@@ -1,9 +1,8 @@
-#include "iomanager.h"
+#include "Iomanager.h"
 #include <algorithm>
 #include <fstream>
 #include <iomanip>
 #include <iostream>
-#include <sstream>
 #include <string>
 #include <vector>
 
@@ -29,6 +28,10 @@ Iomanager::Iomanager(std::string name) : FileName(name) {
 }
 
 void Iomanager::Print() {
+  if (NamePoints.empty()) {
+    std::cout << "No Record Yet\n" << std::endl;
+    return;
+  }
   std::vector<std::pair<std::string, int>> vecForSort;
 
   // copy key-value pairs from the map to the vector
@@ -47,6 +50,7 @@ void Iomanager::Print() {
               << " | " << std::setw(11) << vecForSort[i].first << " | "
               << vecForSort[i].second << std::endl;
   }
+  std::cout << std::endl;
 }
 
 void Iomanager::Add(int const &point) {

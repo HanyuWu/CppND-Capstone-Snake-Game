@@ -140,6 +140,60 @@ SnakeGame/fast:
 	$(MAKE) -f CMakeFiles/SnakeGame.dir/build.make CMakeFiles/SnakeGame.dir/build
 .PHONY : SnakeGame/fast
 
+src/GameMenu.o: src/GameMenu.cpp.o
+
+.PHONY : src/GameMenu.o
+
+# target to build an object file
+src/GameMenu.cpp.o:
+	$(MAKE) -f CMakeFiles/SnakeGame.dir/build.make CMakeFiles/SnakeGame.dir/src/GameMenu.cpp.o
+.PHONY : src/GameMenu.cpp.o
+
+src/GameMenu.i: src/GameMenu.cpp.i
+
+.PHONY : src/GameMenu.i
+
+# target to preprocess a source file
+src/GameMenu.cpp.i:
+	$(MAKE) -f CMakeFiles/SnakeGame.dir/build.make CMakeFiles/SnakeGame.dir/src/GameMenu.cpp.i
+.PHONY : src/GameMenu.cpp.i
+
+src/GameMenu.s: src/GameMenu.cpp.s
+
+.PHONY : src/GameMenu.s
+
+# target to generate assembly for a file
+src/GameMenu.cpp.s:
+	$(MAKE) -f CMakeFiles/SnakeGame.dir/build.make CMakeFiles/SnakeGame.dir/src/GameMenu.cpp.s
+.PHONY : src/GameMenu.cpp.s
+
+src/Iomanager.o: src/Iomanager.cpp.o
+
+.PHONY : src/Iomanager.o
+
+# target to build an object file
+src/Iomanager.cpp.o:
+	$(MAKE) -f CMakeFiles/SnakeGame.dir/build.make CMakeFiles/SnakeGame.dir/src/Iomanager.cpp.o
+.PHONY : src/Iomanager.cpp.o
+
+src/Iomanager.i: src/Iomanager.cpp.i
+
+.PHONY : src/Iomanager.i
+
+# target to preprocess a source file
+src/Iomanager.cpp.i:
+	$(MAKE) -f CMakeFiles/SnakeGame.dir/build.make CMakeFiles/SnakeGame.dir/src/Iomanager.cpp.i
+.PHONY : src/Iomanager.cpp.i
+
+src/Iomanager.s: src/Iomanager.cpp.s
+
+.PHONY : src/Iomanager.s
+
+# target to generate assembly for a file
+src/Iomanager.cpp.s:
+	$(MAKE) -f CMakeFiles/SnakeGame.dir/build.make CMakeFiles/SnakeGame.dir/src/Iomanager.cpp.s
+.PHONY : src/Iomanager.cpp.s
+
 src/controller.o: src/controller.cpp.o
 
 .PHONY : src/controller.o
@@ -284,6 +338,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... SnakeGame"
+	@echo "... src/GameMenu.o"
+	@echo "... src/GameMenu.i"
+	@echo "... src/GameMenu.s"
+	@echo "... src/Iomanager.o"
+	@echo "... src/Iomanager.i"
+	@echo "... src/Iomanager.s"
 	@echo "... src/controller.o"
 	@echo "... src/controller.i"
 	@echo "... src/controller.s"
